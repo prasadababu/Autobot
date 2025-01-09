@@ -10,7 +10,7 @@ class Car implements Vehicle {
     // No need to implement start() since it's a default method
 }
 
-// Usage
+// Usages
 public class Main {
     public static void main(String[] args) {
         Car car = new Car();
