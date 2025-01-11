@@ -14,8 +14,8 @@ import org.apache.commons.io.FileUtils;
 public class First {
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "./chromedriver");
-        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./Resources/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./Resources/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com");
