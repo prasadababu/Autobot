@@ -3,6 +3,11 @@
         "."
     ],
     "java.project.referencedLibraries": [
+        "selenium-java-4.27.0/commons-io-2.18.0.jar",
+        "selenium-java-4.27.0/commons-io-2.18.0-tests.jar",
+        "selenium-java-4.27.0/commons-io-2.18.0-test-sources.jar",
+        "selenium-java-4.27.0/commons-io-2.18.0-sources.jar",
+        "selenium-java-4.27.0/commons-io-2.18.0-javadoc.jar",
         "selenium-java-4.27.0/selenium-support-4.27.0.jar",
         "selenium-java-4.27.0/selenium-support-4.27.0-sources.jar",
         "selenium-java-4.27.0/selenium-safari-driver-4.27.0.jar",
@@ -86,5 +91,6 @@
         "selenium-java-4.27.0/byte-buddy-1.15.10-sources.jar",
         "selenium-java-4.27.0/auto-service-annotations-1.1.1.jar",
         "selenium-java-4.27.0/auto-service-annotations-1.1.1-sources.jar"
-    ]
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
 }
