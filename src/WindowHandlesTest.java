@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WindowHandlesTest {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException, InterruptedException{
         // System.setProperty("webdriver.chrome.driver", "./Resources/chromedriver");
         // System.setProperty("webdriver.chrome.driver","./Resources/chromedriver.exe");
 
@@ -17,8 +17,10 @@ public class WindowHandlesTest {
 
         JavascriptExecutor jr = (JavascriptExecutor) driver;
         jr.executeScript("window.open('https://bing.com','_blank')");
-        jr.executeScript("window.open('https://facebook.com','_blank')");
+        jr.executeScript("window.open('https://facebook.com')");
+        jr.executeScript("window.open('')");
 
+        Thread.sleep(2000);
         Set<String> str = driver.getWindowHandles();
         for (String string : str) {
             driver.switchTo().window(string);
