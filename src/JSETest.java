@@ -25,12 +25,12 @@ public class JSETest {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
-        driver.get("https://google.com");
-        // driver.get("https://toolsqa.com/selenium-training?q=banner#enroll-form");
+        // driver.get("https://google.com");
+        driver.get("https://toolsqa.com/selenium-training?q=banner#enroll-form");
 
         
 
-        WebDriverWait wdw=new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wdw=new WebDriverWait(driver, Duration.ofSeconds(50));
         WebElement we = wdw.until(ExpectedConditions.visibilityOfElementLocated(By.id("first-name")));
         // WebElement we = driver.findElement(By.id("first-name"));
         System.out.println("HELLLLLLOOOOOOO");
