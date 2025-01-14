@@ -2,6 +2,7 @@ package src;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
@@ -21,8 +22,10 @@ public class ChromeDriverTest {
         System.out.println(url);
 
         driver.findElement(By.xpath("//a[@aria-label='Sign in']")).click();
-        ;
-
-        driver.quit();
+    
+        driver.switchTo().newWindow(WindowType.TAB);
+        driver.get("https://www.bing.com");
+        
+        // driver.quit();
     }
 }
