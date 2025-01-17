@@ -1,7 +1,7 @@
 package src;
 
-// import org.testng.Assert;
-import org.junit.Assert;
+import org.testng.Assert;
+// import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,8 +20,8 @@ public class AssertionsTest {
 
      
        
-        // assertTrue("options", "optios","unable to assert");
-        Assert.assertTrue("test message",true);
+        Assert.assertTrue(true,"unable to assert");
+        // Assert.assertTrue("test message",true);
         String obj1="options";
         String obj2="options";
         Assert.assertEquals(obj1, obj2);
