@@ -9,13 +9,13 @@ import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WindowHandlesTest {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         // System.setProperty("webdriver.chrome.driver", "./Resources/chromedriver");
         // System.setProperty("webdriver.chrome.driver","./Resources/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com");
-
+driver.manage().window().maximize();
         // Get the handle of the original window
         String originalWindowHandle = driver.getWindowHandle();
 

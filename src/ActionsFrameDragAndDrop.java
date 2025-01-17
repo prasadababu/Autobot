@@ -31,6 +31,16 @@ public class ActionsFrameDragAndDrop {
             Thread.sleep(500);
         }
 
+
+        //Second test
+        driver.get("https://practice.expandtesting.com/drag-and-drop");
+
+        WebElement e1 = driver.findElement(By.xpath("//div[@id='column-a']"));
+        WebElement e2 = driver.findElement(By.xpath("//div[@id='column-b']"));
+
+        Actions acts = new Actions(driver);
+        acts.clickAndHold(e1).moveToElement(e2).release().build().perform();
+
         // driver.quit();
     }
 }

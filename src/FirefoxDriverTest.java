@@ -6,12 +6,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class FirefoxDriverTest {
     public static void main(String[] args) throws IOException, InterruptedException {
 
         // System.setProperty("webdriver.chrome.driver", "./Resources/chromedriver");
         // System.setProperty("webdriver.chrome.driver","./msedgedriver.exe");
+
+        System.setProperty("webdriver.gecko.driver", "./Resources/geckodriver.exe");
+
+        // Initialize Gecko Driver using Desired Capabilities Class
+
+        // DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        // capabilities.setCapability("marionette", true);
+        // WebDriver driver = new FirefoxDriver(capabilities);
 
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--headless");
